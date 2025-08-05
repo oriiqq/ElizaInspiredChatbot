@@ -1,0 +1,113 @@
+{
+  "substitutions": {
+    "i": "you",
+    "you": "i",
+    "my": "your",
+    "your": "my",
+    "am": "are",
+    "are": "am",
+    "i'm": "you are",
+    "you're": "i am",
+    "me": "you",
+    "i've": "you have",
+    "you've": "i have",
+    "i was": "you were",
+    "you were": "i were"
+  },
+  "keywords": [
+    {
+      "key": "family",
+      "rank": 15,
+      "memory": true,
+      "rules": [
+        {
+          "decomp": ".*\\bfamily\\b.*",
+          "reassemb": [
+            "Tell me more about your family.",
+            "How do you get along with your family?",
+            "Your family seems to be an important topic."
+          ],
+          "memory_reassemb": [
+            "Earlier you mentioned your family. Could you elaborate?",
+            "Let's go back to the topic of your family."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mother",
+      "rank": 10,
+      "rules": [
+        {
+          "decomp": ".*\\bmother\\b.*",
+          "reassemb": [
+            "How does your relationship with your mother make you feel?",
+            "Tell me more about your mother.",
+            "What was your relationship with your mother like?"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "i am",
+      "rank": 5,
+      "rules": [
+        {
+          "decomp": ".*i am (.*)",
+          "reassemb": [
+            "Why do you say you are {0}?",
+            "How long have you been {0}?",
+            "Do you believe it is normal to be {0}?"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "i feel",
+      "rank": 5,
+      "rules": [
+        {
+          "decomp": ".*i feel (.*)",
+          "reassemb": [
+            "Tell me more about these feelings.",
+            "Do you often feel {0}?",
+            "When do you usually feel {0}?"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "computer",
+      "rank": 8,
+      "rules": [
+        {
+          "decomp": ".*\\bcomputer\\b.*",
+          "reassemb": [
+            "Do computers worry you?",
+            "Are you talking about me?",
+            "How do you feel about machines?"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sorry",
+      "rank": 0,
+      "rules": [
+        {
+          "decomp": ".*\\bsorry\\b.*",
+          "reassemb": [
+            "There's no need to apologize.",
+            "Apologies are not required."
+          ]
+        }
+      ]
+    }
+  ],
+  "fallback": [
+    "I'm not sure I understand you fully.",
+    "Please go on.",
+    "That's interesting. Please elaborate.",
+    "How does that make you feel?"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "rules": [
+    {
+      "pattern": "^.*\\bi am (.*)$",
+      "responses": [
+        "Why do you say you are {1}?"
+      ]
+    },
+    {
+      "pattern": "mother",
+      "responses": [
+        "Tell me more about your family."
+      ]
+    },
+    {
+      "pattern": "i need (.*)",
+      "responses": [
+        "Why do you need {0}?",
+        "Would it really help you to get {0}?",
+        "Are you sure you need {0}?"
+      ]
+    },
+    {
+      "pattern": "why dont you ([^\\?]*)\\??",
+      "responses": [
+        "Do you really think I don't {0}?",
+        "Perhaps eventually I will {0}.",
+        "Do you want me to {0}?"
+      ]
+    },
+    {
+      "pattern": "why cant i ([^\\?]*)\\??",
+      "responses": [
+        "Do you think you should be able to {0}?",
+        "If you could {0}, what would you do?",
+        "I don't know — why can't you {0}?"
+      ]
+    },
+    {
+      "pattern": "^.*\\bi am (.*)$",
+      "responses": [
+        "Why do you say you are {1}?"
+      ]
+    },
+    {
+      "pattern": "mother",
+      "responses": [
+        "Tell me more about your family."
+      ]
+    }
+  ],
+  "fallback": "Please, go on..."
+}
